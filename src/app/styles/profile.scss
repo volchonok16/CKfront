@@ -1,0 +1,152 @@
+.profile-user {
+  &__container {
+    width: 750px;
+    height: 320px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    margin: 50px auto 0 auto;
+    padding-left: 30px;
+    display: flex;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+
+  &__name {
+    font-size: 16px;
+    margin: 15px 0;
+  }
+
+  &__table {
+    &--container {
+      margin-top: 80px;
+      margin-left: 30px;
+    }
+  }
+
+  &__line {
+    display: flex;
+    width: 415px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+  }
+
+  &__label {
+    width: 230px;
+    font-size: 14px;
+  }
+
+  &__text {
+    font-size: 14px;
+
+    &--skills {
+      width: 180px;
+    }
+  }
+
+  &__divider {
+    border-bottom: 1px solid #3d93f0;
+  }
+}
+
+.completed-courses {
+  margin-top: 60px;
+  box-sizing: border-box;
+
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  &__course {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    width: 410px;
+    height: 230px;
+
+    padding: 20px 0 20px 20px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+
+    background: url("Assets/course-bg.png") no-repeat;
+    background-position: right;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+
+  &__courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__name {
+    font-size: 18px;
+  }
+
+  &__duration {
+    margin-bottom: 10px;
+  }
+
+  &__img {
+    position: absolute;
+    top: 58px;
+    right: 10px;
+  }
+}
+
+.certificate {
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  box-sizing: border-box;
+
+  &__add {
+    width: 340px;
+    display: block;
+    cursor: pointer;
+    padding-left: 100px;
+    box-sizing: border-box;
+  }
+
+  &__certificate {
+    position: relative;
+
+    width: 340px;
+    height: 270px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    box-sizing: border-box;
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-delete {
+      position: absolute;
+      right: 3px;
+      top: 3px;
+    }
+
+    &-text {
+      text-align: center;
+    }
+  }
+}

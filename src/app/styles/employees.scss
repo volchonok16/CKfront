@@ -1,0 +1,158 @@
+.employees {
+	display: flex;
+	flex-direction: column;
+	&__title-container {
+		margin: 20px 30px 0px 30px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&__title-text {
+		font-size: 20px;
+	}
+	&__body-container {
+		display: flex;
+	}
+	&__body-container-employees {
+		width: 70%;
+		margin-top: 20px;
+		column-count: 2;
+		justify-self: flex-start;
+	}
+	&__body-additional-panel {
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+		margin-left: 30px;
+		&--multiSelect > span{
+			width: 350px;
+		}
+		&--multiSelect span div div{
+			min-height: 35px;
+		}
+		& div + div {
+			margin-top: 20px;
+		}
+	}
+}
+
+.employee {
+	&__card {
+	width: 456px;
+	height: 167px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: row;
+	padding: 0 0;
+
+	&-photo {
+		width:101px;
+		height: 136px;
+		margin-top: 15px;
+		margin-bottom: 10px;
+		background: url("Assets/employeePhoto.png");
+	}
+
+	&-info {
+		margin-left: 20px;
+		width: 313px;
+		
+		p:first-of-type{
+			margin-top: 15px;
+		}
+		p:last-of-type{
+			margin-top: 20px;
+		}
+	}
+
+	&--text {
+		height: 24px;
+		border-bottom: 1px solid #EAEAEA;
+		white-space: pre-wrap;
+	}
+	}
+	
+
+}
+// !убрать
+.invisible {
+	opacity: 0;
+}
+
+.pagination {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	cursor: pointer;
+	li {
+		width: 30px;
+		height: 30px;
+		position: relative;
+		
+
+	}
+	li + li {
+		margin-left: 10px;
+	}
+	a {
+		display: block;
+		text-align: center;
+		height: 100%;
+		text-decoration: none;
+	}
+
+	&__cell {
+		padding: 1px;
+		background: linear-gradient(90.9deg, #2889F1 0%, #92C3F8 100%);
+		a {
+			padding: 4px;
+			background: #fff;
+			color: black;
+			&:hover {
+				background: lightskyblue;
+			}
+		}
+		
+	}
+	&__arrow {
+		a {
+			display: block;
+			padding-top: 4px;
+			outline: none;
+		}
+	}
+	&__link--active a {
+		color: #fff;
+		background: linear-gradient(90.9deg, #2889F1 0%, #92C3F8 100%);
+	  }
+	  
+	&__link--disabled a {
+	color: rgb(198, 197, 202);
+	}
+
+	&__break {
+		display: flex;	
+		margin-top: 12px;
+
+	& > div {
+		width: 5px;
+		height: 5px;
+	}
+		div + div {
+			margin-left: 7px;
+		}
+	
+		&-dot {
+			&--green{
+				background-color: #28C399;
+			}
+			&--orange {
+				background-color: #EE6719;
+			}
+			&--blue {
+				background-color: #2889F1;
+			}
+		}
+	}
+}

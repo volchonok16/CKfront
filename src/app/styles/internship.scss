@@ -1,0 +1,100 @@
+.internship {
+  &__switch-container {
+    width: 351px;
+    display: flex;
+    height: 70px;
+    margin-left: 31px;
+    margin-top: 43px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+  }
+
+  &__inner {
+    width: 189px;
+    background: #ffffff;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    &:hover {
+      background: linear-gradient(90.9deg, #2889f1 0%, #92c3f8 100%);
+  }
+  }
+    &__outer{
+      width: 189px;
+      background: #ffffff;
+      border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    &:hover {
+      background: linear-gradient(90.9deg, #2889f1 0%, #92c3f8 100%);
+  }
+    }
+
+
+  &__courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin-top: 40px;
+  }
+
+  &__course {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    width: 410px;
+    height: 230px;
+
+    padding: 20px 0 20px 20px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+
+    background: url("Assets/course-bg.png") no-repeat;
+    background-position-x: right;
+    background-position-y: 2px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    &--text {
+      color: #000;
+    }
+
+    &__name {
+      padding-left: 20px;
+      margin-top: 9px;
+      font-size: 14px;
+      color: #999999;
+    }
+
+    &__stuck {
+        width: 150px;
+        height: 25px;
+        padding-left: 20px;
+        padding-top: 5px;
+        font-size: 18px;
+    }
+
+    &__length {
+        width: 69px;
+        height: 19px;
+        padding-left: 20px;
+        padding-top: 101px;
+        font-size: 14px;
+    }
+
+    &__from-to {
+        width: 69px;
+        height: 19px;
+        padding-left: 20px;
+        padding-top: 10px;
+        font-size: 14px;
+    }
+  }
+
+  &__completed-text {
+    text-align: center;
+  }
+}

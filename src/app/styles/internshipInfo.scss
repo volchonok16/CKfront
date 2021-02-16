@@ -1,0 +1,188 @@
+.internship-info {
+
+  &__advances-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  &__container {
+    &-title {
+      margin-top: 53px;
+      margin-left: 30px;
+      color: rgb(255, 102, 0);
+    }
+
+    &-bar {
+      display: flex;
+      height: 100px;
+      justify-content: space-around;
+      margin-top: 30px;
+      background: linear-gradient(90.9deg, #2889f1 0%, #92c3f8 100%);
+    }
+
+    &__line {
+        position: relative;
+        justify-content: space-between;
+        width: 1040px;
+        margin: 20px auto;
+        border: 1px solid #d3d3d3;
+    }
+
+    &-duration,
+    &-format,
+    &-start,
+    &-period,
+    &-work {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      color: #ffffff;
+    }
+  }
+
+  &__description {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-left: 30px;
+    color: #000000;
+
+    &-what,
+    &-for {
+      font-size: 24px;
+    }
+  }
+
+  &__signup {
+    width: 275px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+    background: linear-gradient(50.27deg, #9e00ff 0%, #00ff66 100%);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+
+    &:hover {
+      background: linear-gradient(50.27deg, #a00efb 0%, #1dfd76 100%);
+      box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.109);
+    }
+  }
+
+  &__programm {
+    &-title {
+      font-size: 36px;
+      line-height: 49px;
+      margin-left: 500px;
+    }
+
+    &-lesson {
+      position: relative;
+      display: flex;
+      background: linear-gradient(90.9deg, #2889f1 0%, #92c3f8 100%);
+      border-radius: 10px;
+      height: 75px;
+      width: 1040px;
+      margin: 0 auto;
+      justify-content: space-between;
+      padding-right: 220px;
+      color: #ffffff;
+      margin-top: 10px;
+
+      &--active {
+        min-height: 200px;
+      }
+
+      &-number {
+        margin-top: 5px;
+        margin-left: 30px;
+        font-size: 18px;
+      }
+
+      &-name {
+        font-size: 24px;
+        margin-top: 2px;
+        margin-left: 30px;
+      }
+
+      &-date {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      &-description {
+        margin-top: 35px;
+      }
+    }
+    &-close {
+      &-lesson {
+        background: linear-gradient(90.9deg, #2889f1 0%, #92c3f8 100%);
+        border-radius: 10px;
+        display: flex;
+      }
+    }
+  }
+
+  &__svg {
+    &--container {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      right: 0;
+      top: 20px;
+      cursor: pointer;
+    }
+  }
+
+  &__line {
+    width: 1040px;
+    margin: 40px auto;
+    border: 1px solid #d3d3d3;
+  }
+
+  &__features {
+    font-size: 24px;
+    margin-top: 10px;
+    display: flex;
+    font-size: 18px;
+    width: 625px;
+    height: 100px;
+    align-items: center;
+
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &-svg {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      &--container {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        margin-right: 30px;
+        border: 1px solid #2889F1;
+        border-radius: 50px;
+
+        &:hover {
+          &>svg {
+            box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.109);
+          }
+        }
+      }
+    }
+  }
+}

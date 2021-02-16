@@ -1,0 +1,176 @@
+.login,
+.registration {
+  font-family: 'Open Sans';
+  background-image: url("Assets/Login-background.png");
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  padding-top: 130px;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  display: block;
+  position: fixed;
+  z-index: 40;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  &__title {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  &__form {
+    margin-top: 30px;
+
+    &-reg-link {
+      position: absolute;
+      z-index: 40;
+      right: 60px;
+      color: #000;
+      text-decoration: underline;
+      font-size: 18px;
+    }
+
+    &-label {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      margin: 0 auto 20px auto;
+      font-size: 18px;
+      position: relative;
+    }
+
+    &-input {
+      margin-top: 5px;
+      width: 400px;
+      height: 50px;
+      background: linear-gradient(90.9deg, #2889F1 0%, rgba(40, 137, 241, 0.44) 100%);
+      border-radius: 15px;
+      border: none;
+      font-size: 18px;
+      outline: none;
+      padding-left: 55px;
+      color: #fff;
+      box-sizing: border-box;
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.589);
+      }
+    }
+
+    &-svg {
+      position: absolute;
+      top: 42px;
+      left: 20px;
+    }
+
+    &-btn {
+      position: absolute;
+      right: 50px;
+      bottom: 40px;
+      width: 150px;
+      height: 50px;
+      background: linear-gradient(90.9deg, #2889F1 0%, rgba(40, 137, 241, 0.44) 100%);
+      border-radius: 15px;
+      color: #fff;
+      outline: none;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background: linear-gradient(90.9deg, #1f6cbe 0%, rgba(40, 137, 241, 0.561) 100%);
+      }
+    }
+
+    &-checkbox {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+
+      &+label {
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        left: 50px;
+        bottom: 50px;
+      }
+
+      &+label::before {
+        content: '';
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #adb5bd;
+        border-radius: 50px;
+        margin-right: 0.5em;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+        background: linear-gradient(90.9deg, #2889F1 0%, rgba(40, 137, 241, 0.44) 100%);
+      }
+
+      &:checked+label::before {
+        background: linear-gradient(90.9deg, #2889F1 0%, rgba(40, 137, 241, 0.44) 100%);
+        background-image: url("Assets/Login-checkboxs-checked.png");
+      }
+    }
+  }
+
+  &--container {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+  }
+}
+
+.registration {
+  height: 700px;
+
+  &__form {
+    min-height: 500px;
+
+    &-input--short {
+      width: 265px;
+    }
+
+    &-input--code {
+      padding-left: 0;
+      text-align: center;
+    }
+
+    &-submit-btn {
+      width: 110px;
+      height: 45px;
+
+      margin-left: 20px;
+
+      outline: none;
+      border: none;
+      background: linear-gradient(50.27deg, #9E00FF 0%, #00FF66 100%);
+      border-radius: 40px;
+      cursor: pointer;
+
+      color: #fff;
+      font-size: 14px;
+
+      &:hover {
+        background: linear-gradient(50.27deg, #a81bff 0%, #20ff79 100%);
+        box-shadow: 4px 4px 16px rgba(93, 93, 93, 0.842);
+      }
+    }
+  }
+}

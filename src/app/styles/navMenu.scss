@@ -1,0 +1,127 @@
+.nav {
+  widows: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  &__logo {
+    background: url("Assets/logo.png");
+    width: 330px;
+    height: 85px;
+  }
+
+  &__link-container {
+    width: 620px;
+    height: 90px;
+    display: flex;
+    margin-left: 120px;
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    padding-left: 0;
+    font-size: 14px;
+    padding-top: 35px;
+    height: 90px;
+    margin-right: 40px;
+    box-sizing: border-box;
+
+    &:hover {
+      padding: 35px 20px 35px 20px;
+      background: linear-gradient(90.9deg, #2889f1 0%, #92c3f8 100%);
+      color: #fff;
+      text-decoration: underline;
+      font-weight: 700;
+    }
+  }
+
+  &__my-internship {
+    &-container {
+      width: 155px;
+      height: 28px;
+      background: url("Assets/my_internship-bg.png") no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 15px;
+      padding-right: 5px;
+      box-sizing: border-box;
+    }
+
+    &-text {
+      text-decoration: none;
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+
+  &__my-info {
+    width: 155px;
+    height: 28px;
+    margin-left: 15px;
+    display: flex;
+    cursor: pointer;
+
+    &-img {
+      width: 30px;
+      height: 40px;
+      border: 1px solid #2889f1;
+      box-sizing: border-box;
+      filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+      border-radius: 50px;
+    }
+
+    &-svg {
+      margin-top: 10px;
+    }
+
+    &-name {
+      margin: 10px auto;
+      font-size: 15px;
+    }
+
+    &-links--container {
+      display: flex;
+      flex-direction: column;
+      width: 180px;
+      height: 100px;
+      position: absolute;
+      z-index: 50;
+      top: 80px;
+      right: 20px;
+      background-color: #fff;
+      border-radius: 3px;
+      box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+
+      &--one, &--two, &--exit {
+        box-sizing: border-box;
+        padding-top: 4px;
+        color: #000;
+        height: 33px;
+        text-align: center;
+        font-size: 18px;
+
+        &:hover {
+          background: linear-gradient(90.9deg, #2889f1 0%, #92c3f8 100%);
+          color: #fff;
+          font-weight: 600;
+        }
+      }
+
+      &--one {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      &--exit {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+  }
+}
